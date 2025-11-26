@@ -77,8 +77,8 @@ This provides automatic execution of the [Shell Check](https://www.shellcheck.ne
  * Make sure the JVM is set to a pre-16 version, for compatibility with the Spring-Framework version participants were using.
     * E.g. if using [SdkMan](https://sdkman.io/), use Coretto-11: `sdk install java 11.0.29-amzn`
  * Make sure BookStoreInternals and XoxInternals are installed with `mvn clean install`
-    * git clone https://github.com/m5c/XoxInternals.git; cd XoxInternals; git checkout RestifyStudy; mvn clean install
-    * git clone https://github.com/m5c/BookStoreInternals.git; cd BookStoreInternals; git checkout RestifyStudy; mvn clean install
+    * `git clone https://github.com/m5c/XoxInternals.git; cd XoxInternals; git checkout RestifyStudy; mvn clean install`
+    * `git clone https://github.com/m5c/BookStoreInternals.git; cd BookStoreInternals; git checkout RestifyStudy; mvn clean install`
  * Make sure the Unit test projects for Xox and BookStore are cloned and located at the expected location (`XOXTESTDIR` / `BSTESTDIR` variables):
    * `git clone https://github.com/m5c/XoxStudyRestTest`
    * `git clone https://github.com/m5c/BookStoreRestTest`
