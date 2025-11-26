@@ -384,14 +384,14 @@ function clearTempFiles {
 # Function to print help message
 function usage {
   echo "RESTify Analyzer Script"
-  echo "This software performs an automatic reliable run of unit tests for RESTified versions of the BookStore and Xox software samples."
+  echo "This software performs an automatic run of unit tests for RESTified versions of the BookStore and Xox software samples."
   echo "Usage: ./analyze [-hdvu::][Colour-Animal]"
   echo "-h => print this help message"
   echo "-d => enable debug mode where all intermediate results are printed"
+  echo "-u Colour-Animal => Reduce test scope to one participant. Code name must be provided in colour-animal format, e.g. Pink-Snail"
   echo "-v => enable verfication of write operations with subsequent read probes. A test is only considered as successful, if the state change if the initial write operation is reflected in the read result. By default this option is disabled."
-  echo "-u Colour-Animal => Reduce test scope to a single study submission. Name of the target participant code name must be provided, e.g. Pink-Snail"
   echo "https://github.com/m5c/RestifyAnalyzer"
-  echo "(c) M.Schiedermeier, McGill University 2023"
+  echo "(c) M.Schiedermeier, Université du Québec à Montréal 2025"
 }
 
 ## Main logic

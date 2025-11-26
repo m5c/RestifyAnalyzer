@@ -71,6 +71,19 @@ This file is consumed as input data by the [RestifyJupyter](https://github.com/m
 Use IntelliJ IDEA, make sure to enable the [Shell Script](https://plugins.jetbrains.com/plugin/13122-shell-script) plugin.  
 This provides automatic execution of the [Shell Check](https://www.shellcheck.net/) static code linter and enforces a minimum of code style and readability.
 
+## Troubleshooting
+
+ * Make sure the `UPLOADDIR` variable points to the participant submissions.
+ * Make sure the JVM is set to a pre-16 version, for compatibility with the Spring-Framework version participants were using.
+    * E.g. if using [SdkMan](https://sdkman.io/), use Coretto-11: `sdk install java 11.0.29-amzn`
+ * Make sure BookStoreInternals and XoxInternals are installed with `mvn clean install`
+    * git clone https://github.com/m5c/XoxInternals.git; cd XoxInternals; git checkout RestifyStudy; mvn clean install
+    * git clone https://github.com/m5c/BookStoreInternals.git; cd BookStoreInternals; git checkout RestifyStudy; mvn clean install
+ * Make sure the Unit test projects for Xox and BookStore are cloned and located at the expected location (`XOXTESTDIR` / `BSTESTDIR` variables):
+   * `git clone https://github.com/m5c/XoxStudyRestTest`
+   * `git clone https://github.com/m5c/BookStoreRestTest`
+ * If your machine is slow, or has insufficient RAM, increase the REST-restart timer: `STARTUPGRACE` variable
+
 ## License
 
 This software is under open source [MIT License](LICENSE.txt).
